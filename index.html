@@ -15,13 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="updates.css" />
   </head>
   <body>
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="Aura Spa — на главную">AURA <span>SPA</span></a>
       <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><i></i><i></i></button>
       <nav class="nav" aria-label="Основная навигация">
-        <a href="#top">Главная</a><a href="#about">О комплексе</a><a href="#experience">Услуги</a><a href="#prices">Цены</a><a href="#gallery">Галерея</a><a href="#availability">Свободные места</a><a href="#reviews">Отзывы</a><a class="nav-contact" href="#contacts">Контакты</a>
+        <a href="#top">Главная</a><a href="#about">О комплексе</a><a href="#experience">Услуги</a><a href="#prices">Цены</a><a href="#gallery">Галерея</a><a href="#availability">Свободные места</a><a href="#vacancies">Вакансии</a><a href="#reviews">Отзывы</a><a class="nav-contact" href="#contacts">Контакты</a>
       </nav>
     </header>
 
@@ -34,17 +35,19 @@
           <p class="hero-lead">Ваше личное пространство<br />гармонии и расслабления</p>
           <p class="hero-subline">Банный расслабляющий комплекс в Караганде</p>
           <div class="actions">
-            <a class="button button-primary" href="#contacts">Записаться <span>↗</span></a>
+            <a class="button button-primary" href="tel:+77085915722">Записаться <span>↗</span></a>
             <a class="button button-ghost" href="#gallery">Посмотреть комплекс</a>
           </div>
         </div>
+        <figure class="hero-photo reveal"><img src="assets/aura-spa-hero.jpeg" alt="Детали интерьера и визитки Aura Spa" /><figcaption>Ваша пауза начинается здесь</figcaption></figure>
         <a class="scroll-cue" href="#about"><span></span>Листайте вниз</a>
       </section>
 
       <section class="about section" id="about">
-        <div class="about-visual reveal" aria-label="Интерьер русской парной Aura Spa">
-          <img src="assets/aura-spa-interior-01.jpeg" alt="Русская парная Aura Spa с каменной печью и деревянными полками" />
-          <p>РУССКАЯ ПАРНАЯ · AURA SPA</p>
+        <div class="about-visual inside-aura reveal" aria-label="Внутри Aura Spa">
+          <img class="interior-main" src="assets/aura-spa-interior-01.jpeg" alt="Русская парная Aura Spa с каменной печью и деревянными полками" />
+          <img class="interior-detail" src="assets/aura-spa-interior-02.jpeg" alt="Деревянные полки русской парной Aura Spa" />
+          <p>ВНУТРИ AURA SPA</p>
         </div>
         <div class="about-copy reveal">
           <p class="eyebrow">О комплексе</p>
@@ -70,6 +73,11 @@
         </div>
       </section>
 
+      <section class="services-presentation section" aria-labelledby="services-title">
+        <div class="services-copy reveal"><p class="eyebrow">Услуги</p><h2 id="services-title">Время для<br /><em>восстановления</em></h2><p>Познакомьтесь с актуальным перечнем услуг на карточке Aura Spa.</p></div>
+        <button class="service-poster reveal" data-image="assets/aura-spa-services.jpeg" data-title="Услуги Aura Spa" aria-label="Открыть перечень услуг в полном размере"><img src="assets/aura-spa-services.jpeg" alt="Перечень услуг Aura Spa" /><span>Открыть список <b>↗</b></span></button>
+      </section>
+
       <section class="format section" aria-labelledby="format-title">
         <div class="format-title reveal"><p class="eyebrow">Формат отдыха</p><h2 id="format-title">В своём<br /><em>ритме</em></h2></div>
         <div class="format-items">
@@ -80,7 +88,7 @@
       </section>
 
       <section class="gallery section-dark" id="gallery">
-        <div class="gallery-head reveal"><div><p class="eyebrow">Атмосфера</p><h2>Внутри <em>Aura Spa</em></h2></div><p class="gallery-note">Фотографии комплекса<br />будут добавлены сюда</p></div>
+        <div class="gallery-head reveal"><div><p class="eyebrow">Атмосфера</p><h2>Внутри <em>Aura Spa</em></h2></div><p class="gallery-note">Детали для вашего<br />спокойного отдыха</p></div>
         <div class="gallery-grid" aria-label="Галерея Aura Spa">
           <button class="gallery-card card-a reveal" data-title="Aura Spa"><span>Пространство<br />тепла</span><i>↗</i></button>
           <button class="gallery-card card-b reveal" data-title="Aura Spa"><span>Мягкий<br />свет</span><i>↗</i></button>
@@ -90,13 +98,18 @@
       </section>
 
       <section class="prices section" id="prices">
-        <div class="price-panel reveal"><p class="eyebrow">Цены</p><h2>Время, которое<br /><em>остаётся с вами</em></h2><div class="price-rule"></div><p class="price-message">Актуальные цены уточняйте у администратора</p><a class="button button-primary" href="#contacts">Узнать цены <span>↗</span></a></div>
+        <div class="price-panel reveal"><p class="eyebrow">Прайс-лист</p><h2>Услуги<br /><em>и цены</em></h2><div class="price-rule"></div><p class="price-message">Откройте прайс-лист, чтобы рассмотреть услуги и стоимость.</p><button class="price-image" data-image="assets/aura-spa-price-list.jpeg" data-title="Прайс-лист Aura Spa" aria-label="Открыть прайс-лист в полном размере"><img src="assets/aura-spa-price-list.jpeg" alt="Прайс-лист Aura Spa" /><span>Открыть прайс-лист <b>↗</b></span></button></div>
       </section>
 
       <section class="availability section" id="availability" aria-labelledby="availability-title">
-        <div class="availability-copy reveal"><p class="eyebrow">Свободные места</p><h2 id="availability-title">Забронируйте<br /><em>время для отдыха</em></h2><p>Выберите удобное время и подарите себе несколько часов отдыха и расслабления в Aura Spa.</p><a class="button button-primary" href="#contacts">Записаться <span>↗</span></a></div>
+        <div class="availability-copy reveal"><p class="eyebrow">Свободные места</p><h2 id="availability-title">Забронируйте<br /><em>время для отдыха</em></h2><p>Выберите удобное время и подарите себе несколько часов отдыха и расслабления в Aura Spa.</p><a class="button button-primary" href="tel:+77085915722">Записаться <span>↗</span></a></div>
         <div class="availability-photos reveal"><figure class="availability-photo photo-large"><img src="assets/aura-spa-interior-02.jpeg" alt="Интерьер русской парной Aura Spa" /><figcaption>Тепло натурального дерева</figcaption></figure><figure class="availability-photo photo-small"><img src="assets/aura-spa-interior-01.jpeg" alt="Печь и деревянные полки в русской парной Aura Spa" /></figure></div>
         <div class="availability-contact reveal"><span>Для записи и уточнения свободного времени</span><a class="text-link" href="#contacts">Контакты <b>→</b></a></div>
+      </section>
+
+      <section class="vacancies section-dark" id="vacancies" aria-labelledby="vacancies-title">
+        <div class="vacancy-copy reveal"><p class="eyebrow">Вакансии</p><h2 id="vacancies-title">Станьте частью<br /><em>нашей команды</em></h2><p>Присоединяйтесь к команде Aura Spa.</p></div>
+        <figure class="vacancy-poster reveal"><img src="assets/aura-spa-vacancy.jpeg" alt="Вакансия мастера по массажу Aura Spa: условия и контакты" /></figure>
       </section>
 
       <section class="reviews section-dark" id="reviews">
@@ -105,7 +118,7 @@
       </section>
 
       <section class="contacts section" id="contacts">
-        <div class="contact-copy reveal"><p class="eyebrow">Контакты</p><h2>Найдите<br /><em>своё спокойствие</em></h2><p class="address"><b>Aura Spa</b><br />ул. Баженова, 181, Караганда<br /><span>Михайловка м-н, Казыбек Би район, 1 этаж</span></p><div class="contact-actions"><a class="button button-primary" href="https://2gis.kz/karaganda/directions/points/%7C73.053025%2C49.791301%3B70000001077729735" target="_blank" rel="noopener">Построить маршрут <span>↗</span></a><a class="text-link" href="https://2gis.kz/karaganda/firm/70000001077729735" target="_blank" rel="noopener">Открыть в 2ГИС <b>↗</b></a></div></div>
+        <div class="contact-copy reveal"><p class="eyebrow">Контакты</p><h2>Найдите<br /><em>своё спокойствие</em></h2><p class="address"><b>Aura Spa</b><br />ул. Баженова, 181, Караганда<br /><span>Михайловка м-н, Казыбек Би район, 1 этаж</span></p><div class="contact-actions"><a class="button button-primary" href="tel:+77085915722">Позвонить <span>↗</span></a><a class="text-link" href="https://wa.me/77085915722" target="_blank" rel="noopener">Написать в WhatsApp <b>↗</b></a><a class="text-link" href="https://2gis.kz/karaganda/firm/70000001077729735" target="_blank" rel="noopener">Открыть в 2ГИС <b>↗</b></a></div></div>
         <a class="map-card reveal" href="https://2gis.kz/karaganda/firm/70000001077729735" target="_blank" rel="noopener" aria-label="Открыть Aura Spa в 2ГИС"><div class="map-grid"></div><div class="map-ring"></div><span class="map-pin">A</span><p>КАРАГАНДА<br /><b>Баженова, 181</b></p></a>
       </section>
     </main>
